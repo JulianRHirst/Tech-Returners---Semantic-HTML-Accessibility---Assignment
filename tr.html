@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+  
+<html lang="en">
 
 <head>
   <title>Accessibility Features: Easy Wins</title>
+
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -34,14 +36,11 @@
       </form>
     </section>
   </header>
-  <article>
+  <main>
     <header>
       <h1>Accessibility Features: Easy Wins</h1>
       <h2>Handy tips on how to create accessible websites for everyone</h2>
-      <img src="./atricle-image.png" alt="A person using a computer with a screen reader" width="100%">
-      <author>
-        By <a href="mailto:jimmy.eggs@hotmail.com">Jim Eggs</a> on 04.08.21
-      </author>
+      <img src="./atricle-image-small.png" alt="A person using a computer with a screen reader">
       <nav id="article">
         <ul>
 
@@ -49,7 +48,6 @@
 
           <li><a href="#accessibility-checks">Accessibility Checks</a></li>
 
-          <nav id="subsections">
             <ul>
               <li><a href="#text-size">Text Size</a></li>
               <li><a href="#images">Images</a></li>
@@ -59,14 +57,17 @@
               <li><a href="#css">Style Sheets</a></li>
               <li><a href="#Forms">Form Design</a></li>
             </ul>
-          </nav>
 
           <li><a href="#conclusion">Conclusion</a></li>
 
         </ul>
       </nav>
     </header>
-    <main>
+      <author>
+        By <a href="mailto:jimmy.eggs@hotmail.com">Jim Eggs</a> on 04.08.21
+      </author>
+
+    <article>
       <section id="introduction">
         <h2>Introduction</h2>
         <p>Tim Berners Lee dreamt of a World Wide Web that would be free and accessible to everyone. Sadly, the modern
@@ -138,29 +139,28 @@
           </section>
           <section id="forms">
             <h3>Form Design</h3>
-            <details>Forms on a web page should be marked up correctly so that they can be used with only the keyboard,
+            <p>Forms on a web page should be marked up correctly so that they can be used with only the keyboard,
               voice
               input,
               or screen readers. Form labels should be clickable, increasing the target area and making it easier to
               select
-              small radio buttons or checkboxes.</details>
+              small radio buttons or checkboxes.</p>
           </section>
         </section>
         <summary id="conclusion">
           <h3>Conclusion</h3>
-          <details>Web accessibility is important to ensure that all users can access the information on a website.
+          <p>Web accessibility is important to ensure that all users can access the information on a website.
             By using HTML heading elements, re-sizing text, providing alternative text for images, using clear link
             text,
             having JavaScript independence, checking color contrast, ensuring style sheet support, and correctly marking
             up
             forms, web developers can create websites that are accessible to all users, including those with
             disabilities.
-          </details>
+          </p>
           <p>For more information on Web Accessibility view <a
               href="https://www.w3.org/WAI/test-evaluate/preliminary/">The W3C Web Accessibility Initiative</a></p>
-
         </summary>
-    </main>
+    </article>
 
     <footer>
       <nav>
@@ -183,9 +183,9 @@
       </nav>
 
     </footer>
-  </article>
+  </main>
   <footer>
-    <img src="trlogo.jpg" alt="Tech returners logo" width="100px">
+    <img src="trlogo.jpg" alt="Tech returners logo">
     <nav>
       <ul>
       <li><a href="stopsign.jpg">News</a>
