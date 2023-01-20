@@ -1,113 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /* CSS for "Accessibility Features: Easy Wins" HTML */
+
+:root {
+    --header-bg-color: red;
+    --header-nav-bg-color: rosybrown;
+    --header-font-color: white;
+    --header-font-family:Anton;
+    --body-font-family: Arial, Helvetica, sans-serif;
+    --body-font_colour: #333;
+    --header-preferences_bg-color: lightpink;
+    --header-preferences-font: var(--body-font-family);
+    --main-h1-bg-color: var(--header-bg-color);
+    --main-h1-font-color: var(--header-font-color);
+    --main-h1-font: var(--header-font-family);
+    --main-h1-font-size: 2.5rem;
+}
 
 /* Body and Text Styling */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: var(--body-font-family);
+    font-size: 1rem;
     line-height: 1.5;
-    color: #333;
-    }
-    
-    /* Navigation Styling */
-    nav ul {
+    color:black;
+    background-color: rgb(240, 240, 240);
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: var(--header-font-family);
+    margin: 0.5rem;
+    display: flex;
+}
+
+/* Navigation Styling */
+header nav ul {
+    display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    }
-    
-    nav li {
-    margin: 0 10px;
-    }
-    
-    nav a {
+    white-space: nowrap;
+    justify-content: flex-start;
+    flex-wrap: row wrap;
+    background-color: var(--header-nav-bg-color);
+    font-size: 2rem;
+}
+
+header nav li {
+    background-color: var(--header-bg-color);
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem;
+}
+
+nav a {
     text-decoration: none;
-    color: #333;
-    }
+    color: var(--header-font-color);
+}
+
+/* Accessibility Options Styling */
+.--header-options {
+    padding: 1.25rem;
+    background-color: var(--header-preferences_bg-color);
+    font-family: var(--header-preferences-font);
     
-    /* Accessibility Options Styling */
-    #accessibility-options {
-    padding: 20px;
-    background-color: #f9f9f9;
-    }
-    
-    #accessibility-options h2 {
-    margin-bottom: 10px;
-    }
-    
-    #accessibility-options form {
-    margin-top: 20px;
-    }
-    
-    /* Article Styling */
-    main {
-    max-width: 800px;
-    margin: 0 auto;
-    }
-    
-    article header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    }
-    
-    article header h1 {
-    flex: 1;
-    font-size: 36px;
-    margin-bottom: 10px;
-    }
-    
-    article header h2 {
-    flex: 1;
-    font-size: 24px;
-    margin-bottom: 10px;
-    }
-    
-    article header img {
+}
+
+.--header-options h2 {
+    margin-bottom: 0.625rem;
+}
+
+.--header-options form {
+    margin-top: 1.25rem;
+}
+
+/* Article Styling */
+main {
     max-width: 100%;
-    margin-right: 20px;
-    }
-    
-    article #article {
-    margin-top: 20px;
-    }
-    
-    article #article ul {
+    margin: 0 auto;
+}
+
+article {
+    color: black;
+}
+
+article header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+}
+
+h1 {
+    flex: 1;
+    font-family: var(--main-h1-font);
+    font-size: var(--main-h1-font-size);
+    color: var(--main-h1-font-color);
+    background-color: var(--main-h1-bg-color);
+    margin-bottom: 0.625rem;
+}
+
+ h2 {
+    flex: 1;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem;
+    flex: 1;
+    margin-bottom: 0.625rem;
+}
+
+img {
+    max-width: 100%;
+    margin-right: 1.25rem;
+}
+
+article #article {
+    margin-top: 1.25rem;
+}
+
+article #article ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    }
-    
-    article #article li {
-    margin: 10px 0;
-    }
-    
-    article #article a {
+}
+
+article #article li {
+    margin: 0.625rem 0;
+}
+
+article #article a {
     text-decoration: none;
     color: #333;
-    }
-    
-    article p {
-    margin-bottom: 20px;
-    }
-    
-    /* Section Styling */
-    section {
-    padding: 20px;
-    margin-bottom: 20px;
-    }
-    
-    section h2 {
-    margin-bottom: 10px;
-    }
-    
-    /* Link Styling */
-    a {
+}
+
+article p {
+    margin-bottom: 1.25rem;
+}
+
+/* Section Styling */
+section {
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+section h2 {
+    margin-bottom: 0.625rem;
+}
+
+/* Link Styling */
+a {
     color: #337ab7;
-    text-decoration: none;
-    }
     
-    a:hover {
+}
+
+a:hover {
     text-decoration: underline;
+}
+
+button:hover {
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
     }
+    20% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(00px);
+    }
+};
+
+.footer-logo {
+    width: 4rem;
+}

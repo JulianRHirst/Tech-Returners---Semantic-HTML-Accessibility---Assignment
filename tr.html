@@ -1,32 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
   <title>Accessibility Features: Easy Wins</title>
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/index.css">
-  <meta name="CSS: Key Concepts - Assignment" content="Tech Returners CSS Concepts Assignment">
-  <meta name="keywords" content="HTML,CSS">
-  <meta name="author" content="Julian Hirst">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="--header-nav">
+  <header = header__>
+    <nav>
       <UL>
-        <li class="--header-nav-li"><a href="index.html">Tech Returner News</a></li>
-        <li class="--header-nav-li"><a href="news.html">News</a></li>
-        <li class="--header-nav-li"><a href="opinion.html">Opinion</a></li>
-        <li class="--header-nav-li"><a href="tech.html">Tech</a></li>
-        <li class="--header-nav-li"><a href="sport.html">Sport</a></li>
-        <li class="--header-nav-li"><a href="culture.html">Culture</a></li>
-        <li class="--header-nav-li"><a href="about.html">About</a></li>
-        <li class="--header-nav-li"><a href="lifestyle.html">Lifestyle</a></li>
-        <li class="--header-nav-li"><a href="jobs.html">Jobs</a></li>
+        <li><a href="index.html">Tech Returner News</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="opinion.html">Opinion</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="lifestyle.html">Lifestyle</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
       </UL>
     </nav>
 
-    <section id="accessibility-options" class="--header-options">
+    <section id="accessibility-options">
       <h2>Preferences</h2>
       <p>We aim to make this site accessible to a wide audience and to ensure a great experience for all users by
         conforming to World Wide Web Consortium accessibility guidelines (W3C's WCAG). However, if you are having
@@ -38,13 +36,14 @@
       </form>
     </section>
   </header>
-  <main>
     <article>
       <header>
+        <h1 id='xxx'>Accessibility Features: Easy Wins</h1>
+        <h2>Handy tips on how to create accessible websites for everyone</h2>
+        <p> By <a href="mailto:jimmy.eggs@hotmail.com">Jim Eggs</a> on 04.08.21</p>
         <img src="../img/atricle-image-small.png" alt="A person using a computer with a screen reader">
         <nav id="article">
           <ul>
-
             <li><a href="#introduction">Introduction</a></li>
 
             <li><a href="#accessibility-checks">Accessibility Checks</a></li>
@@ -62,12 +61,8 @@
           </ul>
         </nav>
       </header>
-      <h1>Accessibility Features: Easy Wins</h1>
+  
 
-      <p> By <a href="mailto:jimmy.eggs@hotmail.com">Jim Eggs</a> on 04.08.21</p>
-
-
-      <h2>Handy tips on how to create accessible websites for everyone</h2>
 
       <section id="introduction">
         <h2>Introduction</h2>
@@ -79,15 +74,15 @@
           News have collated an ‘easy wins' checklist for Web page accessibility. Keep this guide handy... When creating
           your own websites you can check these criteria off the list!</p>
         <p><a href="related-article.html">What would a truly accessible city look like? Read more..</a></p>
-        <h3>Headings</h3>
+      </section>
+      <section id="accessibility-checks">
+        <h2>Headings</h2>
         <p>HTML heading elements, such as H1, H2, and H3, are used to represent the structure of a web page. This
           structure
           is important for assistive technologies, such as screen readers, that allow users to navigate a page by
           heading.
           By using heading elements correctly, users can easily understand the organization of the content on a page and
           quickly find the information they need.</p>
-      </section>
-      <section id="accessibility-checks">
         <h2>Accessibility Checks</h2>
         <section id="Text-size">
           <h3>Text Size</h3>
@@ -185,7 +180,7 @@
 
       </footer>
     </article>
-  </main>
+  
   <footer>
     <img src="../img/trlogo.jpg" alt="Tech returners logo">
     <nav>
