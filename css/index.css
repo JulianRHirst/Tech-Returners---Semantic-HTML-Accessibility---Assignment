@@ -11,10 +11,14 @@
     --body-font_colour: #333;
     --header-preferences_bg-color: lightpink;
     --header-preferences-font: var(--body-font-family);
-    --main-h1-bg-color: var(--header-bg-color);
-    --main-h1-font-color: var(--header-font-color);
-    --main-h1-font: var(--header-font-family);
-    --main-h1-font-size: 2.5rem;
+    --header-h1-bg-color: var(--header-bg-color);
+    --header-h1-font-color: var(--header-font-color);
+    --header-h1-font: var(--header-font-family);
+    --header-h1-font-size: 4rem;
+    --header-h2-bg-color: var(--header-bg-color);
+    --header-h2-font-color: var(--header-font-color);
+    --header-h2-font: var(--header-font-family);
+    --header-h2-font-size: 2.5rem;
 }
 
 /* Body and Text Styling */
@@ -31,7 +35,9 @@ header {
     font-family: var(--header-font-family);
     margin: 0.5rem;
     display: flex;
+    flex-flow: column;
 }
+
 
 /* Navigation Styling */
 header nav ul {
@@ -54,6 +60,20 @@ nav a {
     text-decoration: none;
     color: var(--header-font-color);
 }
+#subheader {
+    display: flex;
+    flex-flow: row;
+}
+
+
+#article-title {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0.5rem;
+    background-color: var(--header-h1-bg-color);
+    height: 10rem;
+}
+
 
 /* Accessibility Options Styling */
 .--header-options {
@@ -61,6 +81,10 @@ nav a {
     background-color: var(--header-preferences_bg-color);
     font-family: var(--header-preferences-font);
     
+}
+
+.--header-options h1 {
+    margin-bottom: 0.625rem;
 }
 
 .--header-options h2 {
@@ -87,22 +111,30 @@ article header {
     margin-bottom: 1.25rem;
 }
 
-h1 {
-    flex: 1;
+
+header section h1 {
+    /* white-space: nowrap; */
+    place-self: start start;
     font-family: var(--main-h1-font);
-    font-size: var(--main-h1-font-size);
-    color: var(--main-h1-font-color);
-    background-color: var(--main-h1-bg-color);
-    margin-bottom: 0.625rem;
+    font-size: var(--header-h1-font-size);
+    color: var(--header-h1-font-color);
+    background-color: var(--header-h1-bg-color);
+    margin: 0.6rem;
 }
 
- h2 {
+header section h2 {
+    white-space: nowrap;
+    place-self: start start;
+    font-family: var(--main-h2-font);
+    font-size: var(--header-h2-font-size);
+    color: var(--header-h2-font-color);
+    background-color: var(--header-h2-bg-color);
     flex: 1;
     font-size: 1.5rem;
-    margin-bottom: 0.625rem;
-    flex: 1;
-    margin-bottom: 0.625rem;
+    margin: 0.25rem;
 }
+
+
 
 img {
     max-width: 100%;
@@ -145,7 +177,6 @@ section h2 {
 /* Link Styling */
 a {
     color: #337ab7;
-    
 }
 
 a:hover {
