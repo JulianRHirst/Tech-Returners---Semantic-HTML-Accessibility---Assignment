@@ -1,0 +1,113 @@
+/* CSS for "Accessibility Features: Easy Wins" HTML */
+
+/* Body and Text Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    }
+    
+    /* Navigation Styling */
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    nav li {
+    margin: 0 10px;
+    }
+    
+    nav a {
+    text-decoration: none;
+    color: #333;
+    }
+    
+    /* Accessibility Options Styling */
+    #accessibility-options {
+    padding: 20px;
+    background-color: #f9f9f9;
+    }
+    
+    #accessibility-options h2 {
+    margin-bottom: 10px;
+    }
+    
+    #accessibility-options form {
+    margin-top: 20px;
+    }
+    
+    /* Article Styling */
+    main {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+    
+    article header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+    
+    article header h1 {
+    flex: 1;
+    font-size: 36px;
+    margin-bottom: 10px;
+    }
+    
+    article header h2 {
+    flex: 1;
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    article header img {
+    max-width: 100%;
+    margin-right: 20px;
+    }
+    
+    article #article {
+    margin-top: 20px;
+    }
+    
+    article #article ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    article #article li {
+    margin: 10px 0;
+    }
+    
+    article #article a {
+    text-decoration: none;
+    color: #333;
+    }
+    
+    article p {
+    margin-bottom: 20px;
+    }
+    
+    /* Section Styling */
+    section {
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+    
+    section h2 {
+    margin-bottom: 10px;
+    }
+    
+    /* Link Styling */
+    a {
+    color: #337ab7;
+    text-decoration: none;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
