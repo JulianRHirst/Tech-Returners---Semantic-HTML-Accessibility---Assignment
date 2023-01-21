@@ -189,14 +189,19 @@ header h2 {
     /* margin: 0.25rem; */
 }
 
-
+#introduction {
+    display: flex;
+    flex-flow: row;
+}
 
 #article-image1 {
-    object-fit: contain;
-    float: right;
+    object-fit: contain; 
     padding: 20px;
-    width: auto;
-    height: auto;
+    max-width: 20%;
+    /* max-height: 50%; */
+    margin: 1rem;
+    padding: 1rem;
+    display: block;
 }
 
 #--article-nav {
@@ -225,37 +230,37 @@ a {
 
 a:hover {
     text-decoration: underline;
-    animation: shake 0.25s ease;
+    animation: bulge 0.25s ease;
 }
 
 button:hover {
-    animation: shake 0.5s ease;
+    animation: bulge 0.5s ease;
 }
 
-@keyframes shake {
+@keyframes bulge {
     0% {
         transform: translateX(0);
     }
-    20% {
-        transform: translateX(-10px);
+    33% {
+        transform: scale(1.1);
     }
-    40% {
-        transform: translateX(10px);
-    }
-    60% {
-        transform: translateX(-10px);
-    }
-    80% {
-        transform: translateX(10px);
+    67% {
+        transform: scale(0.9);
     }
     100% {
-        transform: translateX(00px);
+        transform: scale(1);
     }
-};
+}
 
 .--footer-logo {
     float: right;
-    max-width: 100%;
+    max-width: 5%;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .row {
@@ -270,4 +275,15 @@ button:hover {
     flex-direction: column;
     flex-basis: 50%;
     flex: 1;
+  }
+
+  .--footer-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem
+  }
+  .footer-spam {
+    row-gap: 1rem;
+    margin: 1em;
+    column-gap: 2rem;
   }
